@@ -1,12 +1,13 @@
 import React from 'react';
 import { CiShare1 } from 'react-icons/ci';
 import { FaRegFolder } from 'react-icons/fa';
-
+import { motion } from 'framer-motion';
 const ArchiveCard = ({item}) => {
 const {title, link , description ,listItem} = item;
  
     return (
-        <a href={link} className='  '>
+        <a
+         href={link} className='  '>
 
         <div className='bg-[#112240] h-[350px] object-cover space-y-4  group p-8 rounded'>
             <div className='  flex justify-between items-center'>
@@ -16,7 +17,7 @@ const {title, link , description ,listItem} = item;
             </a>
             </div>
             <div className='space-y-4'>
-            <h1 className='group-hover:text-designColor text-2xl font-bold'>{title}</h1>
+            <h1 className='group-hover:text-designColor tracking-wide text-2xl font-bold'>{title}</h1>
             <p className='text-sm'>{description}</p>
 
             </div>
